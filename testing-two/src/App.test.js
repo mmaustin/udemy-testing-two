@@ -1,15 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Provider } from 'react-redux';
-import { store } from './app/store';
-import App from './App';
+//import { Provider } from 'react-redux';
+//import { store } from './app/store';
+import App from './components/App';
+import {screen} from '@testing-library/dom'
 
 test('renders learn react link', () => {
-  const { getByText } = render(
-    <Provider store={store}>
+  render(
+    //<Provider store={store}>
       <App />
-    </Provider>
+    //</Provider>
   );
 
-  expect(getByText(/learn/i)).toBeInTheDocument();
+  expect(screen.getByText('This has been more work than it is worth!')).toBeInTheDocument();
 });
