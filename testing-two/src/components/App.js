@@ -1,9 +1,12 @@
 import React from 'react';
+import { CommentBox } from './CommentBox';
+import { CommentList } from './CommentList';
 
 const App = () => {
     return(
         <div>
-            This has been more work than it is worth!
+            <CommentBox/>
+            <CommentList/>
         </div>
     )
 };
