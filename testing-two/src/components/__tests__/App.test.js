@@ -7,13 +7,22 @@ import App from '../App';
 import '@testing-library/jest-dom/extend-expect';
 
 
-test('renders learn react link', () => {
+test('renders Comment List', () => {
   render(
     //<Provider> //store={store}>
       <App />
     //</Provider>
   );
 
-  expect(screen.getByText('This has been more work than it is worth!')).toBeInTheDocument();
+  expect(screen.getByText('Comment List')).toBeInTheDocument();
 });
 
+test('renders Comment Box', () => {
+  render(
+    //<Provider> //store={store}>
+      <App />
+    //</Provider>
+  );
+
+  expect(screen.getByText('Comment Box')).toBeInTheDocument();
+});
