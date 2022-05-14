@@ -24,5 +24,5 @@ test('renders Comment Box', () => {
     //</Provider>
   );
 
-  expect(screen.getByText('Comment Box')).toBeInTheDocument();
+  expect(screen.getByText('Comment Box')).toBeVisible();
 });
