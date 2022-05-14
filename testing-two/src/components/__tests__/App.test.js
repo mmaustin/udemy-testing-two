@@ -14,15 +14,5 @@ test('renders Comment List', () => {
     //</Provider>
   );
 
-  expect(screen.getByText('Comment List')).toBeInTheDocument();
-});
-
-test('renders Comment Box', () => {
-  render(
-    //<Provider> //store={store}>
-      <App />
-    //</Provider>
-  );
-
-  expect(screen.getByText('Comment Box')).toBeVisible();
+  expect(screen.getByRole('button')).toHaveTextContent('Click Me');
 });
