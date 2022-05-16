@@ -4,6 +4,7 @@ import { render, screen } from '@testing-library/react';
 //import { store } from './app/store';
 import App from '../App';
 import '@testing-library/jest-dom/'
+//what happens if you don't add the changes??
 
 
 test('renders Comment List', () => {
