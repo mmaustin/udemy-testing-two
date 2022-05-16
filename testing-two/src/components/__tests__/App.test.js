@@ -3,8 +3,7 @@ import { render, screen } from '@testing-library/react';
 //import { Provider } from 'react-redux';
 //import { store } from './app/store';
 import App from '../App';
-//import {screen} from '@testing-library/dom'
-import '@testing-library/jest-dom/' //extend-expect'
+import '@testing-library/jest-dom/'
 
 
 test('renders Comment List', () => {
