@@ -4,7 +4,7 @@ export const CommentList = () => {
     return(
         <>
             <div>Comment List</div>
-            <p>This repo!</p>
+            <p>Ohh, if you commit the files on this branch, they won't show up in master!!??</p>
         </>
     )
 }
